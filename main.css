@@ -141,10 +141,13 @@ footer {
   #img1,#img2 {
     width:90vw;
   }
-  .triple {
+  .triple,.double {
     flex-direction: column;
   }
-  .triple img, .triple a {
+  .triple img, .triple a,.double img {
     width: 90vw;
+  }
+  .double img {
+    margin-bottom:5vh;
   }
 }
