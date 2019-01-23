@@ -1,0 +1,150 @@
+body {
+  color:#004d00;
+  margin: 0;
+}
+img {
+  align-self: center;
+  max-width: -webkit-fill-available;
+}
+a {
+  color: #001a00;
+  text-decoration: none;
+}
+a:hover, nav p a:hover {
+  text-decoration: line-through;
+}
+header, header h1 a {
+  margin: 2vh 1vw;
+  color:white;
+  -webkit-text-stroke: 2px #001a00;
+}
+header a:hover {
+  text-decoration: none;
+}
+header h3 {
+  color:#001a00;
+  margin: 0 0 2vh;
+  font-size: 2.5em;
+  -webkit-text-stroke:initial;
+}
+header, nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+h1, h2, nav p {
+  font-family: 'Avara',serif;
+  font-weight: 900;
+  margin: 0;
+}
+nav p a{
+  font-weight: 100;
+  margin: 0 .5vw;
+  -webkit-text-stroke:initial;
+}
+
+h1 {
+  font-size: 5em;
+}
+h2 {
+  font-size: 4em;
+  text-align: center;
+}
+p, h3 {
+  font-family: 'Times New Roman', serif;
+  font-size: 2em;
+  margin:1vh 0;
+}
+
+.parent, .child {
+  display: flex;
+  flex-direction: column;
+}
+.parent {
+  align-items: center;
+}
+.child {
+  margin: 1vh 5vw;
+  width: 60vw;
+}
+.child img {
+  max-width: 60vw;
+}
+.triple,.double {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:90vw;
+}
+.triple img, .triple a {
+  width:30vw;
+}
+.double img {
+  width:40vw;
+}
+.border {
+  border: 2px solid #001a00;
+}
+.work a {
+  margin: 2vh 2vw;
+}
+#img1 {
+  width: 30vw;
+}
+#img2 {
+  width:25vw;
+}
+.width80 {
+  width:80vw;
+}
+.mb10 {
+  margin-bottom: 10vh;
+}
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  width: 98vw;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top:2px solid #001a00;
+  border-bottom:2px solid #001a00;
+  margin-top:10vh;
+}
+
+@media (max-width:768px) {
+  header {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  .child,header {
+    width: 90vw;
+  }
+  .child img {
+    max-width: 90vw;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  .flexrow {
+    flex-direction: column;
+  }
+  #img1,#img2 {
+    width:90vw;
+  }
+  .triple {
+    flex-direction: column;
+  }
+  .triple img, .triple a {
+    width: 90vw;
+  }
+}
