@@ -8,7 +8,6 @@ img {
 }
 a {
   color: #002d00;
-  text-decoration: none;
 }
 a:hover, nav p a:hover {
   text-decoration: line-through;
@@ -17,6 +16,9 @@ header, header h1 a {
   margin: 2vh 1vw;
   color:white;
   -webkit-text-stroke: 2px #002d00;
+}
+header h1 a, header a, footer a {
+  text-decoration: none;
 }
 header a:hover {
   text-decoration: none;
