@@ -11,6 +11,8 @@ a:hover, nav p a:hover {
 header, header h1 a {
   margin: 2vh 1vw;
   color:#002d00;
+}
+header h1 a{
   -webkit-text-fill-color: white;
   -webkit-text-stroke: 2px #002d00 }
 header h1 a, header a, footer a,header a:hover {
