@@ -31,7 +31,8 @@ header, nav {
   font-family: Avara;
   src: local("Avara"),
        url("Avara.woff"),url("Avara.woff2");
-  font-weight: bold
+  font-weight: bold;
+  font-weight: black
 }
 h1, h2, nav p {
   font-family: 'Avara',serif;
