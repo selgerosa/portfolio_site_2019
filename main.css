@@ -103,13 +103,11 @@ footer {
   border-top:2px solid #002d00;
   border-bottom:2px solid #002d00;
   margin-top:10vh }
-
 #dark {
   position: fixed;
   right: 5vw;
   bottom: 5vh;
   width:3vw;
-
 }
 body.dark {
   background-color: #001a00;
@@ -131,73 +129,6 @@ body.dark header h1 a {
 body.dark footer {
   border-top:2px solid #fff;
   border-bottom:2px solid #fff;
-}
-body.light body {
-  background-color: #fff;
-  color: #006300;
-}
-body.light .border {
-  border-color: #002d00;
-}
-body.light .border p {
-  border-top: 2px solid #002d00;
-}
-body.light a, body.light header, body.light header h3 {
-  color:#002d00;
-}
-body.light header h1 a {
-  -webkit-text-fill-color: #fff;
-  -webkit-text-stroke: 2px #001a00
-}
-body.light footer {
-  border-top:2px solid #002d00;
-  border-bottom:2px solid #002d00;
-}
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: #fff;
-    color: #006300;
-  }
-  .border {
-    border-color: #002d00;
-  }
-  .border p {
-    border-top: 2px solid #002d00;
-  }
-  a, header, header h3 {
-    color:#fff;
-  }
-  header h1 a {
-    -webkit-text-fill-color: #001a00;
-    -webkit-text-stroke: 2px #fff
-  }
-  footer {
-    border-top:2px solid #002d00;
-    border-bottom:2px solid #002d00;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #001a00;
-    color: #fff;
-  }
-  .border {
-    border-color: #fff;
-  }
-  .border p {
-    border-top: 2px solid #fff;
-  }
-  a, header, header h3 {
-    color:#002d00;
-  }
-  header h1 a {
-    -webkit-text-fill-color: #fff;
-    -webkit-text-stroke: 2px #002d00
-  }
-  footer {
-    border-top:2px solid #fff;
-    border-bottom:2px solid #fff;
-  }
 }
 
 @media (max-width:768px) {
