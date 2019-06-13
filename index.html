@@ -51,8 +51,7 @@
        <p><a href="contact.html">Contact</a></p>
      </nav></div>
    </header>
-   <img src="img/download.png" alt="" id="dark" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light">
-<!-- TODO: replace with vector image -->
+   <div id="dark" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"></div>
    <div class="parent">
      <div class="child work">
        <div class="border"><a href="harkham.html"><img src="img/harkham6.png" alt="Ben Harkham's logo E-86 on shoe sole"></a>

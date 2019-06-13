@@ -4,6 +4,7 @@
    <title>Website Redesign for Jacob Cooper, Selina Gerosa, Graphic and Web Designer</title>
    <link rel="stylesheet" type="text/css" href="main.css" title="style">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script async src="dark.js"></script>
 
    <meta name="description" content="Website Redesign for Jacob Cooper. Redesigned and migrated site from cpanel to Wordpress. Designed and coded by graphic and web designer Selina Gerosa.">
    <meta name="designer" content="Selina Gerosa, selinagerosa@gmail.com">
@@ -51,6 +52,7 @@
       <p><a href="contact.html">Contact</a></p>
     </nav></div>
   </header>
+  <div id="dark" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"></div>
    <div class="parent">
      <img src="img/cooper1.png" alt="desktop display of homepage showing news" class="width80">
      <div class="flexrow">
@@ -61,13 +63,13 @@
         </div>
         <img src="img/cooper3.png" alt="mobile display of about page" id="img1">
      </div>
-     <img src="img/cooperlogo.gif" alt="repeating animation of stereo audio bars followed by Jacob Cooper's logo" class="width80 border">
+     <img src="img/cooperlogo.gif" alt="repeating animation of stereo audio bars followed by Jacob Cooper's logo" class="width80 border" id="img3">
      <div class="triple">
        <img src="img/cooper4.png" alt="mobile display of news page">
        <img src="img/cooper5.png" alt="mobile display of events page">
        <img src="img/cooper6.png" alt="mobile display of albums page">
      </div>
-     <img src="img/cooper2.png" alt="" class="width80">
+     <img src="img/cooper2.png" alt="desktop display of press page" class="width80 mb10">
      <div class="width80">
        <h2>More Like This</h2>
        <div class="triple width80">
