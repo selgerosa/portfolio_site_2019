@@ -4,6 +4,7 @@
    <title>Vector Illustration and Logo Design for Ben Harkham, Selina Gerosa, Graphic and Web Designer</title>
    <link rel="stylesheet" type="text/css" href="main.css" title="style">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script  src="dark.js"></script>
 
    <meta name="description" content="Shoe sole vector illustration for Ben Harkham. Also vectorized and cleaned up his logo, production blueprints, and designs that were printed on the shoe box.">
    <meta name="designer" content="Selina Gerosa, selinagerosa@gmail.com">
@@ -39,7 +40,7 @@
 
 
 </head>
- <body>
+ <body class="dark">
    <header>
      <h1><a href="index.html">Selina Gerosa</a></h1>
      <div><h3 id="header1">Graphic and Web Designer</h3>
@@ -51,6 +52,7 @@
        <p><a href="contact.html">Contact</a></p>
      </nav></div>
    </header>
+   <div id="dark" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"></div>
    <div class="parent">
      <img src="img/harkham9.jpeg" alt="boot on a model" class="width80 b">
      <div class="flexrow">

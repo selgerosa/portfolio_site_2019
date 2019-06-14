@@ -4,6 +4,7 @@
    <title>Website Redesign for Sherri Fisher, Selina Gerosa, Graphic and Web Designer</title>
    <link rel="stylesheet" type="text/css" href="main.css" title="style">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script  src="dark.js"></script>
 
    <meta name="description" content="Website Redesign for Sherri Fisher. Designed and coded by graphic and web designer Selina Gerosa in HTML/CSs/JS. Includes a focus on accecibility and SEO.">
    <meta name="designer" content="Selina Gerosa, selinagerosa@gmail.com">
@@ -39,7 +40,7 @@
 
 
 </head>
- <body>
+ <body class="dark">
    <header>
      <h1><a href="index.html">Selina Gerosa</a></h1>
      <div><h3 id="header1">Graphic and Web Designer</h3>
@@ -51,6 +52,7 @@
        <p><a href="contact.html">Contact</a></p>
      </nav></div>
    </header>
+   <div id="dark" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"></div>
    <div class="parent">
      <img src="img/fisher7.png" alt="desktop display of home page" class="width80">
      <div class="flexrow">
@@ -61,13 +63,13 @@
         </div>
         <img src="img/fisher4.png" alt="mobile display of home page" id="img1">
      </div>
-     <img src="img/fisher8.png" alt="Sherri Fisher's logo, with her initials in a red serif" class="width80">
+     <img src="img/fisher8.png" alt="Sherri Fisher's logo, with her initials in a red serif" class="width80" id="img3">
      <div class="triple">
        <img src="img/fisher3.png" alt="mobile display of about page">
        <img src="img/fisher1.png" alt="mobile display of work page">
        <img src="img/fisher2.png" alt="mobile display of books page">
      </div>
-     <img src="img/fisher6.png" alt="desktop display of about page" class="width80 mb10">
+     <img src="img/fisher6.png" alt="desktop display of books page" class="width80 mb10">
      <div class="width80">
        <h2>More Like This</h2>
        <div class="triple width80">

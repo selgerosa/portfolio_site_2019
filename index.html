@@ -4,6 +4,7 @@
     <meta tag charset="utf-8">
     <title>Selina Gerosa, Graphic and Web Design Portfolio</title>
     <link rel="stylesheet" type="text/css" href="main.css" title="style">
+    <script src="dark.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="This is the portfolio website for graphic and web designer Selina Gerosa. Selina is experienced with the Adobe Creative Suite and HTML/CSS/JS.">
@@ -27,7 +28,6 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#006300">
     <meta name="msapplication-TileColor" content="#006300">
     <meta name="theme-color" content="#ffffff">
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133168379-1"></script>
   <script>
@@ -39,7 +39,7 @@
   </script>
 
  </head>
- <body>
+ <body class="dark">
    <header>
      <h1><a href="index.html">Selina Gerosa</a></h1>
      <div><h3 id="header1">Graphic and Web Designer</h3>
@@ -51,6 +51,7 @@
        <p><a href="contact.html">Contact</a></p>
      </nav></div>
    </header>
+   <div id="dark" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"></div>
    <div class="parent">
      <div class="child work">
        <div class="border"><a href="harkham.html"><img src="img/harkham6.png" alt="Ben Harkham's logo E-86 on shoe sole"></a>

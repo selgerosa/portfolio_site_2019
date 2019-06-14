@@ -4,6 +4,7 @@
    <title>Branding Campaign for Boston University College of Fine Arts Thesis Show, Selina Gerosa, Graphic and Web Designer</title>
    <link rel="stylesheet" type="text/css" href="main.css" title="style">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="dark.js"></script>
 
    <meta name="description" content="Branding Campaign for Boston University College of Fine Arts Thesis Show. Included poster, banner, postcard, website, and sticker design.">
    <meta name="designer" content="Selina Gerosa, selinagerosa@gmail.com">
@@ -38,7 +39,7 @@
    </script>
 
 </head>
- <body>
+ <body class="dark">
    <header>
      <h1><a href="index.html">Selina Gerosa</a></h1>
      <div><h3 id="header1">Graphic and Web Designer</h3>
@@ -50,6 +51,7 @@
        <p><a href="contact.html">Contact</a></p>
      </nav></div>
    </header>
+   <div id="dark" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"></div>
    <div class="parent">
      <img src="img/continuum_fb.jpg" alt="facebook banner reading continuum with overlapping mobius strips in the background" class="width80 mb10">
      <div class="flexrow mb10">

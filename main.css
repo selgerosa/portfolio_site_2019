@@ -38,12 +38,10 @@ h1, h2, nav p {
   font-family: 'Avara',serif;
   font-weight: 900;
   margin: 0 }
-
 nav p a{
   font-weight: 100;
   margin: 0 .5vw;
   -webkit-text-stroke:initial }
-
 h1 {
   font-size: 5em }
 h2 {
@@ -81,7 +79,12 @@ p, h3 {
   align-items: center;
   width:90vw }
 .triple img, .triple a,#img1 {
-  width:30vw }
+  width:30vw;
+  }
+.triple img {
+  width: 26vw;
+  margin: 0 2vw
+}
 .double img {
   width:40vw }
 .border {
@@ -90,6 +93,9 @@ p, h3 {
   display: flex }
 #img2 {
   width:25vw }
+#img3 {
+  margin-bottom: 3vh;
+}
 .width80 {
   width:80vw }
 .mb10 {
@@ -105,6 +111,39 @@ footer {
   border-top:2px solid #002d00;
   border-bottom:2px solid #002d00;
   margin-top:10vh }
+#dark {
+  background-image: url("img/moon.png");
+  background-size: cover;
+  position: fixed;
+  right: 5vw;
+  bottom: 5vh;
+  width:5vw;
+  height:5vw;
+}
+body.dark #dark {
+  background-image: url("img/sun.png")
+}
+body.dark {
+  background-color: #001a00;
+  color: #e6ffe6;
+}
+body.dark .border {
+  border-color: #fff;
+}
+body.dark .border p {
+  border-top: 2px solid #fff;
+}
+body.dark a, body.dark header, body.dark header h3 {
+  color:#fff;
+}
+body.dark header h1 a {
+  -webkit-text-fill-color: #001a00;
+  -webkit-text-stroke: 2px #fff
+}
+body.dark footer {
+  border-top:2px solid #fff;
+  border-bottom:2px solid #fff;
+}
 
 @media (max-width:768px) {
   header {
