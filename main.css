@@ -116,7 +116,7 @@ footer {
   background-size: cover;
   position: fixed;
   right: 5vw;
-  bottom: 5vh;
+  bottom: 10vh;
   width:5vw;
   height:5vw;
 }
@@ -164,4 +164,16 @@ body.dark footer {
     width: 90vw }
   .double img {
     margin-bottom:5vh }
+    #dark {
+      width: 10vw;
+      height: 10vw;
+      bottom: 17vh;
+    }
+}
+@media (max-width:500px) {
+  #dark {
+    width: 15vw;
+    height: 15vw;
+    bottom:5vh;
+  }
 }
