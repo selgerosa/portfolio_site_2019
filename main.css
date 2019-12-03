@@ -149,6 +149,14 @@ body.dark footer {
   border-bottom:2px solid #fff;
 }
 
+.card {
+  margin:5vh 5vw;
+  height:90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 @media (max-width:768px) {
   header {
     flex-direction: column }
@@ -179,5 +187,9 @@ body.dark footer {
     width: 15vw;
     height: 15vw;
     bottom:5vh;
+  }
+  #img4 {
+    width:90vw;
+    margin-left:5vw
   }
 }
