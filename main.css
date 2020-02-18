@@ -27,7 +27,7 @@ header, nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between }
-  @font-face {
+@font-face {
   font-family: Avara;
   src: local("Avara"),
        url("Avara.woff"),url("Avara.woff2");
@@ -165,11 +165,22 @@ body.dark #selfie {
   background-image: url("img/self2.png")
 }
 .card {
-  margin:5vh 5vw;
+  margin:0 5vw;
   height:90vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+.card h3 {
+  margin:0
+}
+.card p {
+  margin: 0
+}
+canvas {
+  position: absolute;
+  width: 100vw;
+  height: 100vh
 }
 
 @media (max-width:768px) {
