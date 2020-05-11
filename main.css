@@ -47,7 +47,7 @@ h1 {
 h2 {
   font-size: 4em;
   text-align: center }
-p, h3 {
+p, h3, button {
   font-family: 'Times New Roman', serif;
   font-size: 2em;
   margin:1vh 0 }
@@ -166,6 +166,35 @@ body.dark footer {
 body.dark #selfie {
   background-image: url("img/self2.png")
 }
+input, textarea {
+  font-family: 'Times New Roman', serif;
+  padding: 2vh 2vw;
+  margin: 2vh 2vw;
+  font-size: 1em;
+  background-color: #e6ffe6;
+  color: #006300;
+}
+input {
+  width:30vw;
+}
+textarea {
+  width:40vw;
+  height:20vh;
+}
+button {
+  width:15vw;
+  font-size: 1em;
+  padding:1vh 0;
+  margin: 2vh 0;
+  background-color: #e6ffe6;
+  color: #006300
+}
+body.dark input, body.dark textarea, body.dark button {
+  color: #001a00;
+}
+.shop div{
+  margin: 2vh 3vw 2vh 3vw;
+}
 .card {
   margin:0 5vw;
   height:90vh;
@@ -228,4 +257,14 @@ canvas {
     width: 90vw;
     height: 130vw;
   }
-}
+  input {
+    width:60vw;
+  }
+  textarea {
+    width:75vw;
+    height:20vh;
+  }
+  button {
+    margin:2vh;
+    width:30vw
+  }
