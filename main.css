@@ -12,14 +12,18 @@ header, header h1 a {
   margin: 2vh 1vw;
   color:#002d00;
 }
+header h1 {
+  /* width: 20vw; */
+}
 header h1 a{
   -webkit-text-fill-color: white;
-  -webkit-text-stroke: 2px #002d00 }
+  -webkit-text-stroke: 2px #002d00;
+   }
 header h1 a, header a, footer a,header a:hover {
   text-decoration: none }
 header h3 {
   color:#002d00;
-  margin: 0 0 2vh;
+  margin: 0 0 -2vh;
   font-size: 2.5em;
   -webkit-text-stroke:initial }
 header, nav {
@@ -27,6 +31,27 @@ header, nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between }
+nav {
+  margin:4vh 2vw 0 0;
+  flex-wrap: wrap;
+}
+#header1 {
+  margin-right: 3vw
+}
+header div div {
+  display: flex;flex-direction: row; align-items: center;
+  width: auto;
+  }
+  #new {
+    right: 0;
+    width: 7vw;
+    z-index: -1;
+    margin: 0 0 3vh -2vw;
+  }
+header div {
+    width: 45vw;
+    text-align:center;
+  }
 @font-face {
   font-family: Avara;
   src: local("Avara"),
@@ -41,7 +66,8 @@ h1, h2, nav p {
 nav p a{
   font-weight: 100;
   margin: 0 .5vw;
-  -webkit-text-stroke:initial }
+  -webkit-text-stroke:initial;
+  font-size: 1.2em;}
 h1 {
   font-size: 5em }
 h2 {
@@ -71,7 +97,8 @@ p, h3, button {
   justify-content: center;
   align-items: center;
   padding: 1vh 5vw;
-  margin: 0 0 1vh }
+  margin: 0 0 1vh;
+  flex-direction: column; }
 .triple,.double {
   display: flex;
   flex-direction: row;
@@ -195,6 +222,7 @@ body.dark input, body.dark textarea, body.dark button {
 .shop div{
   margin: 2vh 3vw 2vh 3vw;
 }
+
 .card {
   margin:0 5vw;
   height:90vh;
@@ -217,10 +245,24 @@ canvas {
 @media (max-width:768px) {
   header {
     flex-direction: column }
+  header div {
+      width: auto;
+      margin-right: 7vw
+    }
   h1 {
-    font-size: 4em }
+    font-size: 4em;}
   h2 {
     font-size: 3em }
+  nav {margin:2vh 0;
+  align-items: center;
+justify-content: center;
+text-align: center;}
+#header1 {
+  text-align: center;
+}
+  #new {
+    width: 10vw;
+  }
   .child div, .work div a {
     max-width: 80vw }
   p {
@@ -244,6 +286,13 @@ canvas {
   }
 }
 @media (max-width:500px) {
+  header div {
+    text-align: left;
+  }
+  #new {
+    width: 20vw;
+  }
+  nav {margin:6vh 0;}
   #dark {
     width: 15vw;
     height: 15vw;
@@ -268,3 +317,4 @@ canvas {
     margin:2vh;
     width:30vw
   }
+}
