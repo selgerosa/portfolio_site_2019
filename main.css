@@ -99,7 +99,7 @@ p, h3, button {
   padding: 1vh 5vw;
   margin: 0 0 1vh;
   flex-direction: column; }
-.triple,.double {
+.triple,.double,.quad {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -114,11 +114,14 @@ p, h3, button {
 }
 .double img {
   width:40vw }
+.quad img {
+  width: 20vw
+}
 .border {
   border: 2px solid #002d00 }
 .work div a {
   display: flex }
-#img2 {
+#img2,.img2 {
   width:25vw }
 #img3 {
   margin-bottom: 3vh;
@@ -126,6 +129,9 @@ p, h3, button {
 #img4 {
   width:35vw;
   padding-right:5vw
+}
+#img5 {
+  margin: 1 7vw 5vh;
 }
 .width80 {
   width:80vw }
@@ -222,7 +228,18 @@ body.dark input, body.dark textarea, body.dark button {
 .shop div{
   margin: 2vh 3vw 2vh 3vw;
 }
-
+.shopdouble {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.shopdouble div {
+  width: 28vw;
+}
+.shopdouble .border p {
+  padding: 1vh 2.5vw
+}
 .card {
   margin:0 5vw;
   height:90vh;
@@ -271,7 +288,7 @@ text-align: center;}
     flex-direction: column }
   .triple,.double {
     flex-direction: column  }
-  .child,header,.triple img, .triple a,.double img,#img1,#img2 {
+  .child,header,.triple img, .triple a,.double img,#img1,#img2,.img2 {
     width: 90vw }
   .double img {
     margin-bottom:5vh }
@@ -284,15 +301,18 @@ text-align: center;}
     width: 50vw;
     height:72vw;
   }
+
+  .shopdouble div { width: 37vw}
 }
 @media (max-width:500px) {
   header div {
     text-align: left;
+    margin: 0
   }
   #new {
     width: 20vw;
   }
-  nav {margin:6vh 0;}
+  nav {margin:6vh 0 0;}
   #dark {
     width: 15vw;
     height: 15vw;
@@ -316,5 +336,11 @@ text-align: center;}
   button {
     margin:2vh;
     width:30vw
+  }
+  .shopdouble div{
+    width: 42vw
+  }
+  .shophome div, .shophome div a {
+    max-width: initial;
   }
 }
