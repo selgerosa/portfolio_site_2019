@@ -52,24 +52,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH7WJQJ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-   <header>
-     <h1><a href="index.html">Selina Gerosa</a></h1>
-     <div><h3 id="header1">Graphic and Web Designer</h3>
-     <nav>
-       <p><a href="index.html">Work</a></p>
-       <p>/</p>
-       <p><a href="about.html">About</a></p>
-       <p>/</p>
-       <p><a href="contact.html">Contact</a></p>
-       <p>/</p>
-       <div><p><a href="shop.html">Shop</a></p><img src="new.gif" id="new" title="new" alt="orange and blue blinking starburst reading 'new'"></div>
-     </nav>
-   </div>
-   </header>
-   <div id="dark" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"></div>
-   <div class="parent">
+<header>
+  <a href="index.html" id="headerimg"><img src="logo.png" alt="The initials 'SG' in a modern transitional serif with a green slime drip coming from the letters." title='logo that links to home page'></a>
+  <nav>
+    <p><a href="work.html">Work</a></p>
+    <p>/</p>
+    <p><a href="about.html">About</a></p>
+    <p>/</p>
+    <p><a href="process.html">Process</a></p>
+    <p>/</p>
+    <p><a href="services.html">Services</a></p>
+    <p>/</p>
+    <p><a href="shop.html">Products</a></p>
+    <p>/</p>
+    <p><a href="contact.html">Contact</a></p>
+    <p>/</p>
+    <div id="dark" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"></div>
+ </nav>
+</header>
+   <div class="parent" id="topmargin">
      <img src="shop/pin/ask/ask7.jpg" class="width80 mb10" alt="spread of star prints in an arch. The backgrounds of each print are a color of the rainbow.">
-     <div class="flexrow mb10">
+     <div class="flexrow mb10 shop">
        <div class="child">
          <h2>Ask For Help Pins</h2>
          <p>While in university, I had a project to reproduce and iterate on a poster fifty ways. I chose James Victore's <a href="https://shop.jamesvictore.com/products/ask-for-help">Ask For Help</a> poster and made a postcard book. These 1 inch pins repurpose a misprint of the book and give its message new life~~</p>
@@ -82,7 +85,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          <p>- US shipping only right now (sorry!).</p>
         </div>
         <div>
-          <img src="shop/pin/ask/ask5.jpg" id="img5" alt="close up of pin reads 'ask for help'">
+          <img src="shop/pin/ask/ask5.jpg" class="mb5" alt="close up of pin reads 'ask for help'">
           <h2>Order Form</h2>
           <form name="pinask" method="POST" data-netlify="true" class="">
              <p> <label>Email: <input type="email" name="email" /></label> </p>
