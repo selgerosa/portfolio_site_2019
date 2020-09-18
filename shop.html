@@ -52,28 +52,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH7WJQJ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-   <header>
-     <h1><a href="index.html">Selina Gerosa</a></h1>
-     <div><h3 id="header1">Graphic and Web Designer</h3>
-     <nav>
-       <p><a href="index.html">Work</a></p>
-       <p>/</p>
-       <p><a href="about.html">About</a></p>
-       <p>/</p>
-       <p><a href="contact.html">Contact</a></p>
-       <p>/</p>
-       <div><p><a href="shop.html">Shop</a></p><img src="new.gif" id="new" title="new" alt="orange and blue blinking starburst reading 'new'"></div>
-    </nav></div>
-   </header>
+<header>
+  <a href="index.html" id="headerimg"><img src="logo.png" alt="The initials 'SG' in a modern transitional serif with a green slime drip coming from the letters." title='logo that links to home page'></a>
+  <nav>
+    <p><a href="work.html">Work</a></p>
+    <p>/</p>
+    <p><a href="about.html">About</a></p>
+    <p>/</p>
+    <p><a href="process.html">Process</a></p>
+    <p>/</p>
+    <p><a href="services.html">Services</a></p>
+    <p>/</p>
+    <p><a href="shop.html">Products</a></p>
+    <p>/</p>
+    <p><a href="contact.html">Contact</a></p>
+    <p>/</p>
+    <div id="dark" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"></div>
+ </nav>
+</header>
    <div id="dark" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"></div>
-   <div class="parent">
+   <div class="parent" id="topmargin">
      <div class="child work shophome">
+       <p>In addition to my digital and custom graphic design work, I also create a variety of pins and prints. Keep scrolling to see what’s currently on offer.</p>
        <h2>Prints</h2>
        <div class="shopdouble mb10">
-         <div class="border"><a href="star.html"><img src="shop/star/star8.jpeg" alt="spread of star prints in an arch. The backgrounds of each print are a color of the rainbow."></a>
-         <p><a href="star.html">Star Prints &mdash; Unique and customizable celestial prints. 5x7 in. $5-15 sliding scale. </a></p></div>
-       </div><h2>Pins</h2>
-       <div class="shopdouble mb10">
+         <div class="border"><a href="star.html"><img src="shop/star/star9.jpeg" alt="spread of star prints in an arch. The backgrounds of each print are a color of the rainbow."></a>
+         <p><a href="star.html">Star Prints &mdash; Unique and customizable celestial prints. 5x7 inch. $5-15 sliding scale.</a></p></div>
+       </div>
+       <h2>Pins</h2>
+       <div class="shopdouble mb10 shopindent">
          <div class="border"><a href="pinstar.html"><img src="shop/pin/star/star3.jpg" alt="spread of star prints in an arch. The backgrounds of each print are a color of the rainbow."></a>
            <p><a href="pinstar.html">Star Pins &mdash; Sparkley, celestial pins. 1 inch. 1$ </a></p></div>
          <div class="border"><a href="pincollage.html"><img src="shop/pin/collage/collage1.jpg" alt="close up of collage pin reads 'its...'"></a>

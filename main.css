@@ -81,7 +81,7 @@ h1, h2, nav p {
   font-family: 'Avara',serif;
   font-weight: 900;
   margin: 0 }
-h3, h4, p, button {
+h3, h4, p, button, .button {
   font-family: 'Times New Roman', serif;
 }
 nav p a{
@@ -98,7 +98,7 @@ h3 {
   font-size: 2.5em;
   margin: 1vh 0 1vh 5vw
 }
-p, button {
+p, button, .button {
   font-size: 2em;
   margin:1vh 0
 }
@@ -109,11 +109,11 @@ h4 {
   font-size: 1.3em;
   margin:.5vh 0
 }
-p::selection, h2::selection, h3::selection, b::selection, em::selection, button::selection {
+p::selection, h2::selection, h3::selection, b::selection, em::selection, button::selection, .button::selection {
   color: #e6ffe6;
   background: #001a00; /* WebKit/Blink Browsers */
 }
-p::-moz-selection, h2::-moz-selection, h3::-moz-selection, b::-moz-selection, em::-moz-selection, button::-moz-selection {
+p::-moz-selection, h2::-moz-selection, h3::-moz-selection, b::-moz-selection, em::-moz-selection, button::-moz-selection, .button::-moz-selection {
   color: #e6ffe6;
   background: #001a00; /* Gecko Browsers */
 }
@@ -125,11 +125,11 @@ a::-moz-selection {
   color:#fff;
   background: #001a00;
 }
-body.dark p::selection, body.dark h2::selection, body.dark h3::selection, body.dark b::selection, body.dark em::selection, button::selection {
+body.dark p::selection, body.dark h2::selection, body.dark h3::selection, body.dark b::selection, body.dark em::selection, button::selection, .button::selection {
   color: #006300;
   background: #fff; /* WebKit/Blink Browsers */
 }
-body.dark p::-moz-selection, body.dark h2::-moz-selection, body.dark h3::-moz-selection, body.dark b::-moz-selection, body.dark em::-moz-selection, body.dark button::-moz-selection {
+body.dark p::-moz-selection, body.dark h2::-moz-selection, body.dark h3::-moz-selection, body.dark b::-moz-selection, body.dark em::-moz-selection, body.dark button::-moz-selection, body.dark .button::-moz-selection {
   color: #006300;
   background: #fff;/* Gecko Browsers */
 }
@@ -149,30 +149,34 @@ body.dark header h1 a {
   -webkit-text-stroke: 2px #fff
 }
 body.dark header {background-color: #001a00;}
-button {
+button, .button {
   max-width:30vw;
   padding:1vh 1vw;
   margin: 2vh 0;
   background-color: #ffff;
   color: #002d00;
   border:2px solid #002d00;
+  text-decoration: none;
 }
-button:hover {
+button:hover, .button:hover {
   background-color: #e6ffe6;
   border:2px solid #001a00;
   color: #001a00;
+  text-decoration: none;
 }
-body.dark button {
+body.dark button, body.dark .button {
   background-color: #001a00;
   color: #e6ffe6;
   border: 2px solid #e6ffe6;
+  text-decoration: none;
 }
-body.dark button:hover {
+body.dark button:hover, body.dark .button:hover {
   color: #fff;
   border-color: #fff;
   background-color: #002d00;
+  text-decoration: none;
 }
-.parent, .child {
+.parent, .child, #contact {
   display: flex;
   flex-direction: column }
 .child {
@@ -182,6 +186,25 @@ body.dark button:hover {
 width: 70vw}
 .child div {
   max-width: 60vw }
+#homeimg {
+  width: 60vw;
+  margin: 0 0 0 35vw;
+}
+#contact {
+  width: 50vw;
+  margin: 1vh 5vw;
+}
+#contact2 {
+  width: 30vw;
+}
+#contact2 div {
+  align-items: center;
+  margin-bottom: 1vh
+}
+#contact2 h2 { margin-left: 5vw}
+#contact2 p {
+  margin:0 0 0 1vw; font-size: 1.3em;
+}
 #topmargin {
   padding-top:20vh;
 }
@@ -245,6 +268,10 @@ body.dark .icon .lm {
 body.dark .icon .nm {
   display: inline;
 }
+.icon2 {
+  width: 5vw;
+  height: 5vw
+}
 /* cap1- small w text, cap2 large, cap3- small, cap4 medium, cap5 medium w text */
 .captionparent { overflow: hidden;margin: 0 5vw }
 .cp1 {height: 25vw;}
@@ -278,23 +305,33 @@ body.dark footer {
   border-top:2px solid #fff;
   border-bottom:2px solid #fff;
 }
-input, textarea {
+input, textarea, select {
   font-family: 'Times New Roman', serif;
-  padding: 2vh 2vw;
-  margin: 2vh 2vw;
-  font-size: 1em;
+  padding: 1vh 1vw;
+  margin:0;
+  font-size: .8em;
   background-color: #e6ffe6;
   color: #006300;
 }
-input {
+input, select {
   width:30vw;
+}
+#namedisplay {
+  display: flex;
+  flex-direction: row;
+}
+#namedisplay input {
+  width: 20vw
+}
+#namedisplay p {
+  padding-right: 3vw
 }
 textarea {
   width:40vw;
   height:20vh;
 }
 
-body.dark input, body.dark textarea {
+body.dark input, body.dark textarea, body.dark select {
   color: #001a00;
 }
 .shop div{
@@ -309,7 +346,12 @@ body.dark input, body.dark textarea {
 .shopdouble div {
   width: 28vw;
 }
-
+.shopdouble div p {
+  padding: 1vh 1vw
+}
+.shopindent {
+  margin-left: 10vw;
+}
 .card {
   margin:0 5vw;
   height:90vh;
@@ -365,8 +407,12 @@ canvas {
     margin-left: 7vw;
     width: 80vw;
   }
-  .child {
+  .child,#contact {
     width: 80vw }
+  #contact2 {
+    margin-left: 5vw;
+    width: 60vw
+  }
   .double, .triple {
     margin-bottom:3vh }
   .cap1 {
@@ -388,9 +434,12 @@ canvas {
   nav {width: 80vw}
   #dark { width:7vw; height:7vw; }
 
-  #selfie {
-    width: 90vw;
-    height: 130vw;
+  #namedisplay input {
+    width: 30vw
+  }
+  #contact2 img {
+    width: 10vw;
+    height: 10vw
   }
   input {
     width:60vw;
@@ -399,7 +448,7 @@ canvas {
     width:75vw;
     height:20vh;
   }
-  button {
+  button, .button {
     margin:2vh;
     width:30vw
   }
@@ -409,11 +458,7 @@ canvas {
   .shophome div, .shophome div a {
     max-width: initial;
   }
-  .cp2 {
-    flex-wrap: wrap;
-  }
-  .cp2 .cap2 {
-    margin:0 0 5vh 20vw;
+  .cp2 {  flex-wrap: wrap; }
+  .cp2 .cap2 { margin:0 0 5vh 20vw; }
 
-  }
 }
