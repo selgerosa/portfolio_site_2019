@@ -7,12 +7,15 @@
   width:4vw;
   height:4vw;
   margin-right: .5vh;
+  cursor: pointer;
 }
+#dark:hover {cursor: pointer;}
 #darktext {
   font-size: .4em;
   text-align: center;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 body.dark #dark {
   background-image: url("img/sun.png")
@@ -157,6 +160,7 @@ button, .button {
   color: #002d00;
   border:2px solid #002d00;
   text-decoration: none;
+  text-align: center;
 }
 button:hover, .button:hover {
   background-color: #e6ffe6;
