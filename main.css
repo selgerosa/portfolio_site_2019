@@ -441,6 +441,9 @@ canvas {
     text-align: left;
     margin: 0
   }
+  h1,h2 {margin-left: 10vw;}
+  h3 { font-size: 2em;}
+  #sectiontitle {margin-left: 13vw}
   #topmargin {
     padding-top:35vh;
   }
