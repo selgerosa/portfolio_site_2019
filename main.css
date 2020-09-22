@@ -465,6 +465,9 @@ canvas {
     width:75vw;
     height:20vh;
   }
+  .captiontext {
+    width: 75vw;
+  }
   button, .button {
     margin:2vh;
     width:30vw
