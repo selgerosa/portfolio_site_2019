@@ -37,14 +37,7 @@ a {
   color: #002d00 }
 a:hover, nav p a:hover {
   text-decoration: line-through }
-header {
-  padding: 2vh 1vw;
-  background-color: #fff;
-  color:#002d00;
-  width: 96vw;
-  position: fixed;
-  justify-content: space-between
-}
+
 header, nav {
   display: flex;
   flex-direction: row;
@@ -66,12 +59,6 @@ nav {
 #headerimg {
   width: 75px;
 }
-header h1 a{
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke: 2px #002d00;
-   }
-header h1 a, header a, footer a,header a:hover {
-  text-decoration: none }
 @font-face {
   font-family: Avara;
   src: local("Avara"),
@@ -92,9 +79,9 @@ nav p a{
   margin: 0 .5vw;
   -webkit-text-stroke:initial;
   font-size: 1em;}
-h1 {
-  font-size: 4em }
-h2 {
+/* h1 {
+  font-size: 4em } */
+h1,h2 {
   font-size: 3em;
   margin: 1vh 0 0 20vw}
 h3 {
@@ -112,11 +99,11 @@ h4 {
   font-size: 1.3em;
   margin:.5vh 0
 }
-p::selection, h2::selection, h3::selection, b::selection, em::selection, button::selection, .button::selection {
+p::selection,h1::selection, h2::selection, h3::selection, b::selection, em::selection, button::selection, .button::selection {
   color: #e6ffe6;
   background: #001a00; /* WebKit/Blink Browsers */
 }
-p::-moz-selection, h2::-moz-selection, h3::-moz-selection, b::-moz-selection, em::-moz-selection, button::-moz-selection, .button::-moz-selection {
+p::-moz-selection,h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, b::-moz-selection, em::-moz-selection, button::-moz-selection, .button::-moz-selection {
   color: #e6ffe6;
   background: #001a00; /* Gecko Browsers */
 }
@@ -128,11 +115,11 @@ a::-moz-selection {
   color:#fff;
   background: #001a00;
 }
-body.dark p::selection, body.dark h2::selection, body.dark h3::selection, body.dark b::selection, body.dark em::selection, button::selection, .button::selection {
+body.dark p::selection,body.dark h1::selection, body.dark h2::selection, body.dark h3::selection, body.dark b::selection, body.dark em::selection, button::selection, .button::selection {
   color: #006300;
   background: #fff; /* WebKit/Blink Browsers */
 }
-body.dark p::-moz-selection, body.dark h2::-moz-selection, body.dark h3::-moz-selection, body.dark b::-moz-selection, body.dark em::-moz-selection, body.dark button::-moz-selection, body.dark .button::-moz-selection {
+body.dark p::-moz-selection, body.dark h1::-moz-selection, body.dark h2::-moz-selection, body.dark h3::-moz-selection, body.dark b::-moz-selection, body.dark em::-moz-selection, body.dark button::-moz-selection, body.dark .button::-moz-selection {
   color: #006300;
   background: #fff;/* Gecko Browsers */
 }
@@ -180,6 +167,21 @@ body.dark button:hover, body.dark .button:hover {
   background-color: #002d00;
   text-decoration: none;
 }
+header {
+  padding: 2vh 1vw;
+  background-color: #fff;
+  color:#002d00;
+  width: 96vw;
+  position: fixed;
+  justify-content: space-between
+}
+header h1 a, header h1{
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 2px #002d00;
+  margin: 0
+   }
+header h1 a, header a, footer a,header a:hover {
+  text-decoration: none }
 .parent, .child, #contact {
   display: flex;
   flex-direction: column }
@@ -341,7 +343,7 @@ body.dark input, body.dark textarea, body.dark select {
 .shop div{
   margin: 2vh 3vw 2vh 3vw;
 }
-.shop h2 {
+.shop h2, .shop h1 {
   margin-left:10vw
 }
 .shopdouble {
@@ -438,6 +440,9 @@ canvas {
   header div {
     text-align: left;
     margin: 0
+  }
+  #topmargin {
+    padding-top:35vh;
   }
   #homehead nav { width: 75vw}
   nav {width: 80vw}
