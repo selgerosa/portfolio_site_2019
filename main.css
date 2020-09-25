@@ -223,7 +223,7 @@ width: 70vw}
 }
 .servicesimg {
   width: 20vw;
-  padding: 5vw
+  padding: 2vh 5vw 1vh
 }
 .border { border: 2px solid #006300}
 .flexrow, .flexrowdcolm {
@@ -426,6 +426,13 @@ canvas {
   .captionparent .cap1 { margin: 3vh 5vw 1vh 0}
   .captiontext {width: 55vw}
   .shopdouble div { width: 37vw}
+  .mtab {
+    margin-left: 5vw
+  }
+  .width30 {
+    width: 67vw;
+    margin-bottom: 3vh;
+}
 }
 @media (max-width:500px) {
   header div {
@@ -470,11 +477,7 @@ canvas {
   .shopdouble div{
     width: 42vw
   }
-  .width30 {
-    width: 67vw;
-    margin-bottom: 3vh;
-}
-  }
+
   .cp2 {  flex-wrap: wrap; }
   .cp2 .cap2 { margin:0 0 5vh 20vw; }
 
