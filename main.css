@@ -332,7 +332,7 @@ body.dark input, body.dark textarea, body.dark select {
 .shop div{
   margin: 2vh 3vw 2vh 3vw;
 }
-.shop h2, .shop h1 {
+.shop h2, .shop h1, .indent,.section h2 {
   margin-left:10vw
 }
 .shopdouble {
@@ -349,9 +349,7 @@ body.dark input, body.dark textarea, body.dark select {
 .shopdouble div p {
   padding: 1vh 1vw
 }
-.indent {
-  margin-left: 10vw;
-}
+
 .card {
   margin:0 5vw;
   height:90vh;
