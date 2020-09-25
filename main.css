@@ -1,11 +1,8 @@
 #dark {
   background-image: url("img/moon.png");
   background-size: cover;
-  /* position: fixed;
-  right: 5vw;
-  bottom: 7vh; */
-  width:4vw;
-  height:4vw;
+  width:50px;
+  height:50px;
   margin-right: .5vh;
   cursor: pointer;
 }
@@ -86,10 +83,10 @@ h1,h2 {
   margin: 1vh 0 0 20vw}
 h3 {
   font-size: 2.5em;
-  margin: 1vh 0 1vh 5vw
+  margin: 1vh 3vw 1vh 5vw
 }
 p, button, .button {
-  font-size: 2em;
+  font-size: 1.5em;
   margin:1vh 0
 }
 p {
@@ -99,11 +96,11 @@ h4 {
   font-size: 1.3em;
   margin:.5vh 0
 }
-p::selection,h1::selection, h2::selection, h3::selection, b::selection, em::selection, button::selection, .button::selection {
+p::selection,h1::selection, h2::selection, h3::selection, strong::selection, em::selection, button::selection, .button::selection {
   color: #e6ffe6;
   background: #001a00; /* WebKit/Blink Browsers */
 }
-p::-moz-selection,h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, b::-moz-selection, em::-moz-selection, button::-moz-selection, .button::-moz-selection {
+p::-moz-selection,h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, strong::-moz-selection, em::-moz-selection, button::-moz-selection, .button::-moz-selection {
   color: #e6ffe6;
   background: #001a00; /* Gecko Browsers */
 }
@@ -115,11 +112,11 @@ a::-moz-selection {
   color:#fff;
   background: #001a00;
 }
-body.dark p::selection,body.dark h1::selection, body.dark h2::selection, body.dark h3::selection, body.dark b::selection, body.dark em::selection, button::selection, .button::selection {
+body.dark p::selection,body.dark h1::selection, body.dark h2::selection, body.dark h3::selection, body.dark strong::selection, body.dark em::selection, button::selection, .button::selection {
   color: #006300;
   background: #fff; /* WebKit/Blink Browsers */
 }
-body.dark p::-moz-selection, body.dark h1::-moz-selection, body.dark h2::-moz-selection, body.dark h3::-moz-selection, body.dark b::-moz-selection, body.dark em::-moz-selection, body.dark button::-moz-selection, body.dark .button::-moz-selection {
+body.dark p::-moz-selection, body.dark h1::-moz-selection, body.dark h2::-moz-selection, body.dark h3::-moz-selection, body.dark strong::-moz-selection, body.dark em::-moz-selection, body.dark button::-moz-selection, body.dark .button::-moz-selection {
   color: #006300;
   background: #fff;/* Gecko Browsers */
 }
@@ -187,15 +184,12 @@ header h1 a, header a, footer a,header a:hover {
   flex-direction: column }
 .child {
   margin: 1vh 5vw;
-  width: 60vw }
+  width: 50vw }
 .pullout { margin-left:15vw;
 width: 70vw}
 .child div {
-  max-width: 60vw }
-#homeimg {
-  width: 50vw;
-  margin: 0 0 0 35vw;
-}
+  max-width: 50vw }
+
 #contact {
   width: 50vw;
   margin: 1vh 5vw;
@@ -212,29 +206,29 @@ width: 70vw}
   margin:0 0 0 1vw; font-size: 1.3em;
 }
 #topmargin {
-  padding-top:20vh;
+  padding-top:14vh;
 }
-.section {
+.section div{
   display: flex;
   flex-direction: row;
-  margin: 2vh 0 0 5vw;
-  width: 80vw;
+  margin: 2vh 0 3vh 5vw;
  }
-.section a {
-  width: 17vw;
+.section div div {
+  max-width: 45vw
+}
+.section  div a {
+  width: 10vw;
   border: 2px solid #006300;
   margin-right: 3vw
 }
-#sectiontitle {
-  margin-left: 25vw;
-}
-#section2 {
-  margin-left: 10vw;
+.servicesimg {
+  width: 20vw;
+  padding: 5vw
 }
 .border { border: 2px solid #006300}
 .flexrow, .flexrowdcolm {
   display: flex;
-  flex-direction: row;}
+  flex-direction: row; justify-content: flex-start;}
 .flexend {
   justify-content: flex-end;
   align-items: flex-end; }
@@ -248,6 +242,7 @@ width: 70vw}
 .triple img, .triple a{ width: 26vw}
 .double img { width:40vw }
 .quad img { width: 20vw }
+.width30 { width: 30vw}
 .width80 { width:80vw }
 .width90 { width: 90vw;}
 .mb10 { margin-bottom: 10vh }
@@ -255,23 +250,17 @@ width: 70vw}
 .mt10 { margin-top: 10vh }
 #more { width: 70vw }
 #more a { width: 20vw }
-.icon h3 {align-self: flex-end;}
-.icon img {
-  display: inline;
-  width: 15vw;
-  height: 15vw;
-  margin: 0 1vw;
-}
-.icon .lm {
+
+.lm {
   display: inline;
 }
-.icon .nm {
+.nm {
   display: none;
 }
-body.dark .icon .lm {
+body.dark .lm {
   display: none;
 }
-body.dark .icon .nm {
+body.dark .nm {
   display: inline;
 }
 .icon2 {
@@ -360,7 +349,7 @@ body.dark input, body.dark textarea, body.dark select {
 .shopdouble div p {
   padding: 1vh 1vw
 }
-.shopindent {
+.indent {
   margin-left: 10vw;
 }
 .card {
@@ -370,10 +359,7 @@ body.dark input, body.dark textarea, body.dark select {
   flex-direction: column;
   justify-content: flex-end;
 }
-.card h3 {
-  margin:0
-}
-.card p {
+.card h3, .card p {
   margin: 0
 }
 canvas {
@@ -381,9 +367,12 @@ canvas {
   width: 100vw;
   height: 100vh
 }
-@media (max-width:1064px) {
+@media (max-width:1024px) {
   nav {
-    width: 60vw
+    width: 50vw
+  }
+  #topmargin {
+    padding-top: 18vh
   }
   .child {
     width: 70vw
@@ -400,10 +389,11 @@ canvas {
     width: auto;
   }
   nav {
-    width:50vw
+    width:70vw;
+    font-size: 1.2em
   }
   #homehead nav {
-    width: 55vw;
+    width: 70vw;
     margin: 1.5vh 0 0;
   }
   #topmargin {
@@ -424,6 +414,7 @@ canvas {
     margin-left: 5vw;
     width: 60vw
   }
+  .section div a {width: 20vw}
   .double, .triple {
     margin-bottom:3vh }
   .cap1 {
@@ -441,15 +432,15 @@ canvas {
     text-align: left;
     margin: 0
   }
-  h1,h2 {margin-left: 10vw; font-size: 2.5em}
-  h3 { font-size: 2em;}
-  #sectiontitle {margin-left: 13vw}
+  h1,h2 {margin-left: 7vw; font-size: 2.5em}
+  h3 { font-size: 1.8em;}
   #topmargin {
-    padding-top:37vh;
+    padding-top:23vh;
   }
-  #homehead nav { width: 75vw}
-  nav {width: 80vw}
-  #dark { width:7vw; height:7vw; }
+  nav {    width: 80vw;
+    font-size: .8em;
+}
+  #dark { width:30px; height:30px; }
 
   #namedisplay input {
     width: 30vw
@@ -458,6 +449,10 @@ canvas {
     width: 10vw;
     height: 10vw
   }
+  .services {
+    flex-direction: column-reverse;
+  }
+
   input {
     width:60vw;
   }
@@ -475,8 +470,22 @@ canvas {
   .shopdouble div{
     width: 42vw
   }
-
+  .width30 {
+    width: 67vw;
+    margin-bottom: 3vh;
+}
+  }
   .cp2 {  flex-wrap: wrap; }
   .cp2 .cap2 { margin:0 0 5vh 20vw; }
 
+}
+
+@media (min-width:2000px) {
+  .section div a {width: 5vw;border: 6px solid #006300;}
+  #topmargin {
+    padding-top: 12vh;
+  }
+  nav { font-size: 2.5em}
+  p {font-size: 1.7em}
+  button, .button {max-width: 20vw;}
 }
