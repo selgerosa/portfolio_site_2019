@@ -96,11 +96,11 @@ h4 {
   font-size: 1.3em;
   margin:.5vh 0
 }
-p::selection,h1::selection, h2::selection, h3::selection, strong::selection, em::selection, button::selection, .button::selection {
+p::selection,h1::selection, h2::selection, h3::selection, h4::selection, strong::selection, em::selection, button::selection, .button::selection {
   color: #e6ffe6;
   background: #001a00; /* WebKit/Blink Browsers */
 }
-p::-moz-selection,h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, strong::-moz-selection, em::-moz-selection, button::-moz-selection, .button::-moz-selection {
+p::-moz-selection,h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, strong::-moz-selection, em::-moz-selection, button::-moz-selection, .button::-moz-selection {
   color: #e6ffe6;
   background: #001a00; /* Gecko Browsers */
 }
@@ -112,11 +112,11 @@ a::-moz-selection {
   color:#fff;
   background: #001a00;
 }
-body.dark p::selection,body.dark h1::selection, body.dark h2::selection, body.dark h3::selection, body.dark strong::selection, body.dark em::selection, button::selection, .button::selection {
+body.dark p::selection,body.dark h1::selection, body.dark h2::selection, body.dark h3::selection, body.dark h4::selection, body.dark strong::selection, body.dark em::selection, button::selection, .button::selection {
   color: #006300;
   background: #fff; /* WebKit/Blink Browsers */
 }
-body.dark p::-moz-selection, body.dark h1::-moz-selection, body.dark h2::-moz-selection, body.dark h3::-moz-selection, body.dark strong::-moz-selection, body.dark em::-moz-selection, body.dark button::-moz-selection, body.dark .button::-moz-selection {
+body.dark p::-moz-selection, body.dark h1::-moz-selection, body.dark h2::-moz-selection, body.dark h3::-moz-selection, body.dark h4::-moz-selection, body.dark strong::-moz-selection, body.dark em::-moz-selection, body.dark button::-moz-selection, body.dark .button::-moz-selection {
   color: #006300;
   background: #fff;/* Gecko Browsers */
 }
