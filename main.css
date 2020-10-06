@@ -225,6 +225,9 @@ width: 70vw}
   width: 20vw;
   padding: 2vh 5vw 1vh
 }
+.imgpadding {
+  padding: 5vh 0;
+}
 .border { border: 2px solid #006300}
 .flexrow, .flexrowdcolm {
   display: flex;
