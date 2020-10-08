@@ -9,123 +9,128 @@
 
 <url>
   <loc>https://selinagerosa.com/</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://selinagerosa.com/index.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
+  <loc>https://selinagerosa.com/work</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://selinagerosa.com/about.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
+  <loc>https://selinagerosa.com/about</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://selinagerosa.com/contact.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
+  <loc>https://selinagerosa.com/process</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://selinagerosa.com/shop.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
+  <loc>https://selinagerosa.com/services</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://selinagerosa.com/rmk.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
+  <loc>https://selinagerosa.com/shop</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://selinagerosa.com/fisher.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
+  <loc>https://selinagerosa.com/contact</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://selinagerosa.com/cooper.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
+  <loc>https://selinagerosa.com/credits</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://selinagerosa.com/digitalscience.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://selinagerosa.com/rmk</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://selinagerosa.com/zachys.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://selinagerosa.com/fisher</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://selinagerosa.com/continuum.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://selinagerosa.com/cooper</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://selinagerosa.com/namakiss.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://selinagerosa.com/digitalscience</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://selinagerosa.com/dorrie.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://selinagerosa.com/zachys</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://selinagerosa.com/harkham.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://selinagerosa.com/namakiss</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://selinagerosa.com/dump.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://selinagerosa.com/dorrie</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://selinagerosa.com/credits.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://selinagerosa.com/continuum</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://selinagerosa.com/harkham</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://selinagerosa.com/dump</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://selinagerosa.com/star</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://selinagerosa.com/commissions</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://selinagerosa.com/pinstar</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://selinagerosa.com/pincollage</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://selinagerosa.com/pinask</loc>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://selinagerosa.com/Selina_Gerosa_resume.pdf</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://selinagerosa.com/star.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://selinagerosa.com/pinstar.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://selinagerosa.com/pincollage.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://selinagerosa.com/pinask.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://selinagerosa.com/mysterystudent.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://selinagerosa.com/mysterymisprint.html</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://selinagerosa.com/continuum_branding_deck.pdf</loc>
-  <lastmod>2020-06-17T12:55:49+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2020-10-08T18:13:18+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 
 
