@@ -52,95 +52,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH7WJQJ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-   <header>
-     <h1><a href="index.html">Selina Gerosa</a></h1>
-     <div><h3 id="header1">Graphic and Web Designer</h3>
-     <nav>
-       <p><a href="index.html">Work</a></p>
-       <p>/</p>
-       <p><a href="about.html">About</a></p>
-       <p>/</p>
-       <p><a href="contact.html">Contact</a></p>
-       <p>/</p>
-       <div><p><a href="shop.html">Shop</a></p><img src="new.gif" id="new" title="new" alt="orange and blue blinking starburst reading 'new'"></div>
-    </nav></div>
-   </header>
+<header>
+  <a href="index.html" id="headerimg"><img src="logo.png" alt="The initials 'SG' in a modern transitional serif with a green slime drip coming from the letters." title='logo that links to home page'></a>
+  <nav>
+    <p><a href="work.html">Work</a></p>
+    <p>/</p>
+    <p><a href="about.html">About</a></p>
+    <p>/</p>
+    <p><a href="process.html">Process</a></p>
+    <p>/</p>
+    <p><a href="services.html">Services</a></p>
+    <p>/</p>
+    <p><a href="shop.html">Products</a></p>
+    <p>/</p>
+    <p><a href="contact.html">Contact</a></p>
+    <p>/</p>
+    <div id="dark" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"></div>
+ </nav>
+</header>
    <div id="dark" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"></div>
-   <div class="parent">
-     <img src="img/rmk2.png" class="width80" alt="home page of the website: minimal header and top navigation bar, large hero image of church, left navigation tab for current events.">
-     <div class="flexrow mb10">
-        <div class="child">
-          <p>The Ramakrishna-Vivekananda Center of New York is a branch of the Ramakrishna Order in India. They have had the same website since the early 90's, and decided it was finally time to give it a complete overhaul. The redesign is coded in pure HTML/CSS/JS and focuses on improving UI/UX and designing a super accessible, completely responsive website.</p>
-          <p><a href="https://ramakrishna.org">https://ramakrishna.org</a></p>
-        </div>
-      </div>
-      <div class="double mb10">
-        <img src="img/rmk3.png" alt="functionality of top navigation drop down on home page">
-        <img src="img/rmk4.png" alt="functionality of home page what's new tab">
-      </div>
-      <div class="flexrow mb10">
-        <div class="child">
-          <h2>Goals</h2>
-          <p>1: Update the aesthetic and brand of the website with an austere and minimalistic attitude, and focus on accessibility.</p>
-          <p>2: Redesign the navigation hierarchy and systems, making sure they are intuitive and comfortable to use at any screen size.</p>
-          <p>3: Design responsive and fully scalable layouts, accounting for mobile sizes, as well as large desktop screens that are simple to use and update.</p>
-          <p>4: Refresh the ecommerce layout with a mobile-friendly focus.</p>
-          <p>5: Develop metadata and include search engine optimization best practices.</p>
-        </div>
-      </div>
-      <img src="img/rmk17.png" class="width80 mb10" alt="desktop layout of Media page, links to media pages on blue transparent square, on photo of choir event.">
-
-      <div class="flexrow mb10">
-        <div class="child">
-          <p>The church’s website was originally designed in 1995, and was honestly a beautiful example of early web design (check out the original on the <a href="https://web.archive.org/web/20191130174038/http://www.ramakrishna.org/">web archive</a>). However, their website needed to be brought into the modern day. I knew I wanted to reflect the church's meditative and reverent attitude, so I took a minimal and clean approach to really highlight their images and teachings.</p>
-        </div>
-        <img src="img/rmk12.png" class="img2" alt="mobile layout of inner text page">
-      </div>
-      <div class="double mb10">
-        <img src="img/rmk13.png" alt="desktop layout of internal text page, Headquarters">
-        <img src="img/rmk14.png" alt="desktop layout of internal text page, Headquarters, scrolled down">
-      </div>
-      <div class="double mb10">
-        <img src="img/rmk16.png" alt="desktop layout of internal text page, Sri Ramakrishna Tributes">
-        <img src="img/rmk15.png" alt="desktop layout of internal text page, Emblem">
-      </div>
-      <div class="flexrow mb10">
-        <div class="child">
-          <p>I also paid special attention to increasing the website’s accessibility, since it is so important to make sure modern websites are as accessible as possible for a diverse body of users. This means making sure the site is fully responsive, text size is comfortable to read at all scales in a legible typeface, all images have descriptive alt texts, clear link identification, and the navigation is clear, intuitive, and link tab navigable.</p>
-        </div>
-        <img src="img/rmk11.png" class="img2" alt="mobile layout of teachings navigation page, links to inner pages on blue transparent square, on photo of Swami Yuktatmanda preaching">
+   <div class="parent" id="topmargin">
+     <img src="img/rmk/rmk1.png" alt="home page of the website: minimal header and top navigation bar, large hero image of church, left navigation tab for current events.">
+     <h1>Website Redesign</h1>
+      <div class="child">
+        <h3>The Ramakrishna-Vivekananda Center of New York</h3>
+        <p> The Ramakrishna-Vivekananda Center of New York is a branch of the Ramakrishna Order in India. They came to me because they wanted to give their website, first launched in the early 90’s, a complete overhaul. I coded the redesign in pure HTML/CSS/JS and worked to the following goals: </p>
+        <p>1: Update the website aesthetic to be more minimalist and accessible.</p>
+        <p>2: Redesign the site navigation and layout to be more intuitive and usable at any screen size. </p>
+        <p>3. Refresh the ecommerce section of the site to be more mobile-friendly. </p>
+        <p>4: Develop metadata more in line with search engine optimization best practices.</p>
+        <p>Since launching, the website's  user base has <em>increased by 60%</em>, and page views have <em>increased by 30%</em>!</p>
+        <p>Take a look here:</p>
+        <p><a href="https://ramakrishna.org">https://ramakrishna.org</a></p>
       </div>
 
-      <div class="quad mb10">
-        <img src="img/rmk8.png" alt="mobile layout of home page">
-        <img src="img/rmk7.png" alt="mobile layout of home page, what's new tab open">
-        <img src="img/rmk9.png" alt="mobile layout of Headquarters page">
-        <img src="img/rmk10.png" alt="mobile nagvigation drop down open tab">
+      <div class="double">
+        <img src="img/rmk/rmk2.png" alt="">
+        <img src="img/rmk/rmk3.png" alt="">
       </div>
-
-      <div class="flexrow mb10">
-        <div class="child">
-          <p>Another aspect of making the site accessible is strengthening and unifying the church’s web presence and adding external tools. This includes adding audio files to SoundCloud, an embedded Google Map to direction pages, and clear links to their social media.</p>
-          <p>To further improve the site's page rank, I wrote specific and descriptive metadata for every page and secured a number of related urls to alias with the site. Since launching six months ago, the website's traffic has <em>increased</em> 20%!</p>
-        </div>
-        <img src="img/rmk6.png" class="img2" alt="mobile hamburger menu pop up">
-
+      <div class="child pullout">
+        <p>"I enlisted Sel’s help because our website was out of date and needed a total overhaul. Sel worked to understand our goals and very quickly produced diagrams so we could agree on a vision for the update. They were friendly, timely, attentive, and unafraid to learn about our full suite of functions and services. Not only did they produce a more modern, user-friendly site, Sel also showed me how to use Google Analytics so I could better understand my users. In short, Sel was a pleasure to work with and did a fantastic job. I highly recommend them.” &mdash; Keith Martinez, Member of Ramakrishna-Vivekananda Center of NY</p>
       </div>
-      <div class="double mb10">
-        <img src="img/rmk18.png" alt="image gallery page, slideshow with bottom row mini-gallery navigation ">
-        <img src="img/rmk19.png" alt="image gallery page, pop up carousel bottom row mini-gallery navigation ">
+      <div class="double mb5">
+        <img src="img/rmk/rmk4.png" alt="">
+        <img src="img/rmk/rmk7.png" alt="">
       </div>
-     <div class="width80">
-       <h2>More Like This</h2>
-       <div class="triple width80">
-         <a href="cooper.html"><img src="img/cooperlogo.gif" alt="repeating animation of stereo audio bars followed by Jacob Cooper's logo"></a>
-         <a href="continuum.html"><img src="img/continuum12.png" alt="repeating pattern of multicolored sticker design"></a>
-         <a href="digitalscience.html"><img src="img/ds7.png" alt="Digital Science's logo on a light green background"></a>
-       </div>
-     </div>
-   </div>
-   <footer>
-     <p><a href="credits.html">Site Credits</a></p>
-   </footer>
- </body>
+      <div class="triple mb10">
+        <img src="img/rmk/rmk5.png" alt="">
+        <img src="img/rmk/rmk8.gif" alt="">
+        <img src="img/rmk/rmk6.png" alt="">
+      </div>
+      <h2>More Like This</h2>
+    <div class="triple" id="more">
+      <a href="cooper.html" class="border"><img src="img/projecticons/th_cooper.gif" alt="repeating animation of stereo audio bars followed by Jacob Cooper's logo" title="Jacob Cooper Wordpress website redesign"></a>
+      <a href="continuum.html" class="border"><img src="img/projecticons/th_cont.png" alt="repeating pattern of multicolored sticker design" title="Continuum brand identity"></a>
+      <a href="digitalscience.html" class="border"><img src="img/projecticons/th_ds.png" alt="Digital Science's logo on a light green background" title="Digital Science marketing and social media content"></a>
+    </div>
+  </div>
+  <footer>
+    <p><a href="credits.html">Site Credits</a></p>
+  </footer>
+</body>
 </html>
