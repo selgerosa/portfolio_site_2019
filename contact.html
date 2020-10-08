@@ -53,27 +53,55 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <header>
-  <h1><a href="index.html">Selina Gerosa</a></h1>
-  <div><h3 id="header1">Graphic and Web Designer</h3>
+  <a href="index.html" id="headerimg"><img src="logo.png" alt="The initials 'SG' in a modern transitional serif with a green slime drip coming from the letters." title='logo that links to home page'></a>
   <nav>
-    <p><a href="index.html">Work</a></p>
+    <p><a href="work.html">Work</a></p>
     <p>/</p>
     <p><a href="about.html">About</a></p>
     <p>/</p>
+    <p><a href="process.html">Process</a></p>
+    <p>/</p>
+    <p><a href="services.html">Services</a></p>
+    <p>/</p>
+    <p><a href="shop.html">Products</a></p>
+    <p>/</p>
     <p><a href="contact.html">Contact</a></p>
     <p>/</p>
-    <div><p><a href="shop.html">Shop</a></p><img src="new.gif" id="new" title="new" alt="orange and blue blinking starburst reading 'new'"></div>
-</nav></div>
+    <div id="dark" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"></div>
+ </nav>
 </header>
-<div id="dark" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"></div>
-   <div class="parent">
-     <div class="child">
-       <p>Whether it's print, digital, or experiential, I would love to work with you! Some of my other interests include the linguistics of the internet, geocities aesthetics, and chunky serifs. Maybe you'd like to chat :-) </p>
-       <p><a href="mailto:selinagerosa@gmail.com">selinagerosa@gmail.com</a></p>
-       <p><a href="Selina_Gerosa_resume.pdf">resume.pdf</a></p>
-       <p><a href="https://github.com/selinagerosa">https://github.com/&#8203;selinagerosa</a></p>
-       <p><a href="https://instagram.com/selinagerosa">@selinagerosa</a> (instagram)</p>
-     </div>
+    <div class="parent" id="topmargin">
+     <h1>Get In Touch</h1>
+     <div class="flexrowdcolm">
+       <div id="contact">
+       <p>Book a free chat to discuss your design needs! Whether it’s a print, digital, or experiential vision, we can figure out how to use design to communicate effectively with your audience.</p>
+       <form name="contactform" method="POST" data-netlify="true" class="">
+         <div id="namedisplay">
+           <p> <label>First Name: <input type="text" name="fname" /></label> </p>
+           <p> <label>Last Name: <input type="text" name="lname" /></label> </p>
+         </div>
+         <p> <label>Email: <input type="email" name="email" /></label> </p>
+         <p> <label for="source">How did you hear about me? (please select one):</label> </p>
+         <p><select id="source" name="source">
+            <option value="GoogleSearch">Google Search</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Instagram">Instagram</option>
+            <option value="WordofMouth">Word of Mouth</option>
+            <option value="Other">Other</option>
+            <option value="CantRemember">Can't Remember</option>
+          </select></p>
+         <p> <label>Message: <br><textarea name="message"></textarea></label></p>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="contact2">
+        <h2>More Ways to Connect</h2>
+        <div class="flexrow"><img src="img/icons/email.png" class="icon2" alt="stylized email icon"><p><a href="mailto:selinagerosa@gmail.com">selinagerosa@&#8203;gmail.com</a></p></div>
+        <div class="flexrow"><img src="img/icons/resume.png" class="icon2" alt="stylized resume icon"><p><a href="Selina_Gerosa_resume.pdf">resume.pdf</a></p></div>
+        <div class="flexrow"><img src="img/icons/Github.png" class="icon2" alt="stylized github icon"><p><a href="https://github.com/selinagerosa">selinagerosa</a></p></div>
+        <div class="flexrow"><img src="img/icons/linked.png" class="icon2" alt="stylized linkedin icon"><p><a href="https://linkedin.com/in/selinagerosa">selinagerosa</a></p></div>
+        <div class="flexrow"><img src="img/icons/Instagram.png" class="icon2" alt="stylized instagram icon"><p><a href="https://instagram.com/selinagerosa">@selinagerosa</a></p></div>
+      </div></div>
    </div>
    <footer>
      <p><a href="credits.html">Site Credits</a></p>
