@@ -41,7 +41,8 @@ img {
       -ms-grid-row-align: center;
       align-self: center;
   max-width: -webkit-fill-available;
-  display: block
+  display: block;
+  max-width: 100%
 }
 a {
   color: #002d00 }
@@ -272,10 +273,13 @@ width: 70vw}
 .section div div {
   max-width: 45vw
 }
-.section  div a, .section div a img {
+.section  div a {
   width: 10vw;
   border: 2px solid #006300;
   margin-right: 3vw
+}
+.section div a img {
+  width: 10vw;
 }
 .servicesimg {
   width: 20vw;
