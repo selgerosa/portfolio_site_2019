@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 #dark {
   background-image: url("img/moon.png");
   background-size: cover;
@@ -10,8 +17,12 @@
 #darktext {
   font-size: .4em;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
 }
 body.dark #dark {
@@ -26,7 +37,9 @@ body {
   margin: 0;
 overflow-x: hidden;}
 img {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   max-width: -webkit-fill-available;
   display: block
 }
@@ -36,22 +49,35 @@ a:hover, nav p a:hover {
   text-decoration: line-through }
 
 header, nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 nav {
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 90vw;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 #homehead {
   position: unset;
 }
 #homehead nav {
   width: 45vw;
-  align-items: flex-start;
-  align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 #headerimg {
   width: 75px;
@@ -96,6 +122,10 @@ h4 {
   font-size: 1.3em;
   margin:.5vh 0
 }
+p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, strong::-moz-selection, em::-moz-selection, button::-moz-selection, .button::-moz-selection {
+  color: #e6ffe6;
+  background: #001a00; /* WebKit/Blink Browsers */
+}
 p::selection,h1::selection, h2::selection, h3::selection, h4::selection, strong::selection, em::selection, button::selection, .button::selection {
   color: #e6ffe6;
   background: #001a00; /* WebKit/Blink Browsers */
@@ -103,6 +133,10 @@ p::selection,h1::selection, h2::selection, h3::selection, h4::selection, strong:
 p::-moz-selection,h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, strong::-moz-selection, em::-moz-selection, button::-moz-selection, .button::-moz-selection {
   color: #e6ffe6;
   background: #001a00; /* Gecko Browsers */
+}
+a::-moz-selection {
+  color:#fff;
+  background: #001a00;
 }
 a::selection {
   color:#fff;
@@ -112,6 +146,10 @@ a::-moz-selection {
   color:#fff;
   background: #001a00;
 }
+body.dark p::-moz-selection, body.dark h1::-moz-selection, body.dark h2::-moz-selection, body.dark h3::-moz-selection, body.dark h4::-moz-selection, body.dark strong::-moz-selection, body.dark em::-moz-selection, button::-moz-selection, .button::-moz-selection {
+  color: #006300;
+  background: #fff; /* WebKit/Blink Browsers */
+}
 body.dark p::selection,body.dark h1::selection, body.dark h2::selection, body.dark h3::selection, body.dark h4::selection, body.dark strong::selection, body.dark em::selection, button::selection, .button::selection {
   color: #006300;
   background: #fff; /* WebKit/Blink Browsers */
@@ -119,6 +157,10 @@ body.dark p::selection,body.dark h1::selection, body.dark h2::selection, body.da
 body.dark p::-moz-selection, body.dark h1::-moz-selection, body.dark h2::-moz-selection, body.dark h3::-moz-selection, body.dark h4::-moz-selection, body.dark strong::-moz-selection, body.dark em::-moz-selection, body.dark button::-moz-selection, body.dark .button::-moz-selection {
   color: #006300;
   background: #fff;/* Gecko Browsers */
+}
+body.dark a::-moz-selection {
+  color:#002d00;
+  background: #fff;
 }
 body.dark a::selection {
   color:#002d00;
@@ -170,7 +212,9 @@ header {
   color:#002d00;
   width: 96vw;
   position: fixed;
-  justify-content: space-between
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between
 }
 header h1 a, header h1{
   -webkit-text-fill-color: white;
@@ -180,8 +224,13 @@ header h1 a, header h1{
 header h1 a, header a, footer a,header a:hover {
   text-decoration: none }
 .parent, .child, #contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column }
 .child {
   margin: 1vh 5vw;
   width: 50vw }
@@ -198,7 +247,9 @@ width: 70vw}
   width: 30vw;
 }
 #contact2 div {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 1vh
 }
 #contact2 h2 { margin-left: 5vw}
@@ -209,8 +260,13 @@ width: 70vw}
   padding-top:14vh;
 }
 .section div{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 2vh 0 3vh 5vw;
  }
 .section div div {
@@ -230,16 +286,34 @@ width: 70vw}
 }
 .border { border: 2px solid #006300}
 .flexrow, .flexrowdcolm {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row; justify-content: flex-start;}
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start;}
 .flexend {
-  justify-content: flex-end;
-  align-items: flex-end; }
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
 .triple,.double,.quad {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width:90vw;
   margin-left: 5vw;}
 .triple img, .triple a{ width: 26vw}
@@ -286,16 +360,25 @@ body.dark .nm {
   margin: 2vh 0 5vh 10vw
 }
 .twitterblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 #tw1 { margin: 0 5vw 5vh }
 #tw2 {margin: 0 5vw 5vh 10vw}
 #tw3 {margin: 0 5vw 5vh 15vw}
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-top:2px solid #002d00;
   border-bottom:2px solid #002d00;
   margin-top:10vh }
@@ -315,8 +398,13 @@ input, select {
   width:30vw;
 }
 #namedisplay {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 #namedisplay input {
   width: 20vw
@@ -340,9 +428,15 @@ body.dark input, body.dark textarea, body.dark select {
 }
 .shopdouble {
   margin-left: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 85vw
 }
 .shopdouble div {
@@ -356,9 +450,16 @@ body.dark input, body.dark textarea, body.dark select {
 .card {
   margin:0 5vw;
   height:90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .card h3, .card p {
   margin: 0
@@ -371,7 +472,9 @@ canvas {
 @media (max-width:1100px) {
   nav {
     width: 50vw;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
   }
   #topmargin {
@@ -384,9 +487,14 @@ canvas {
 
 @media (max-width:768px) {
   header {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 95vw;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
    }
   header div {
     width: auto;
@@ -403,7 +511,10 @@ canvas {
     padding-top:30vh;
   }
   .flexrowdcolm {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   p {
     font-size: 1.5em }
@@ -460,7 +571,10 @@ canvas {
     height: 10vw
   }
   .services {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 
   input {
@@ -481,7 +595,7 @@ canvas {
     width: 42vw
   }
 
-  .cp2 {  flex-wrap: wrap; }
+  .cp2 {  -ms-flex-wrap: wrap;  flex-wrap: wrap; }
   .cp2 .cap2 { margin:0 0 5vh 20vw; }
 
 }
