@@ -79,7 +79,7 @@ nav {
   -ms-flex-line-pack: start;
       align-content: flex-start;
 }
-#headerimg {
+#headerimg, #headerimg img {
   width: 75px;
 }
 @font-face {
@@ -272,7 +272,7 @@ width: 70vw}
 .section div div {
   max-width: 45vw
 }
-.section  div a {
+.section  div a, .section div a img {
   width: 10vw;
   border: 2px solid #006300;
   margin-right: 3vw
