@@ -81,7 +81,7 @@ nav {
       align-content: flex-start;
 }
 #headerimg, #headerimg img {
-  width: 75px;
+  width: 60px;
 }
 @font-face {
   font-family: Avara;
@@ -258,7 +258,7 @@ width: 70vw}
   margin:0 0 0 1vw; font-size: 1.3em;
 }
 #topmargin {
-  padding-top:14vh;
+  padding-top:17vh;
 }
 .section div{
   display: -webkit-box;
